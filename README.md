@@ -1,5 +1,7 @@
 # freelancer-theme
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/angular-material-extensions/freelancer-theme.svg)](https://greenkeeper.io/)
+
 This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
 version 5.3.0
 
