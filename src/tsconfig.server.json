@@ -6,9 +6,8 @@
     "module": "commonjs",
     "types": []
   },
-  "exclude": ["test.ts", "**/*.spec.ts", "**/*.mock.ts"],
+  "exclude": ["testing/*", "test.ts", "setupJest.ts", "jestGlobalMocks.ts", "**/*.spec.ts"],
   "angularCompilerOptions": {
-    "preserveWhitespaces": true,
     "entryModule": "app/app.server.module#AppServerModule"
   }
 }
