@@ -42,7 +42,9 @@ export class I18nService {
     this.language = '';
 
     this.translateService.onLangChange.subscribe((event: LangChangeEvent) => {
+      // if (localStorage) {
       localStorage.setItem(languageKey, event.lang);
+      // }
     });
   }
 
