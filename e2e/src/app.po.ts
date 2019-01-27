@@ -9,7 +9,9 @@ export class AppPage {
   constructor() {
     // Forces default language
     this.navigateTo();
-    browser.executeScript(() => localStorage.setItem('language', 'en-US'));
+    if (localStorage) {
+      browser.executeScript(() => localStorage.setItem('language', 'en-US'));
+    }
   }
 
   navigateTo() {

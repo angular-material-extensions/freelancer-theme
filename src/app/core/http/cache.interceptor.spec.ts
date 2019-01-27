@@ -115,7 +115,7 @@ describe('CacheInterceptor', () => {
     it('should force cache update', () => {
       // Arrange
       httpCacheService.setCacheData('/toto', new HttpResponse({ body: 'oldCachedData' }));
-      cacheInterceptor.configure({ update: true });
+      // cacheInterceptor.configure({ update: true });
 
       // Act
       http.get('/toto').subscribe(response => {
