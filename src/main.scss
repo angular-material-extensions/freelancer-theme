@@ -23,6 +23,11 @@
 // Theme customization
 @import "theme/theme";
 
+.container {
+  text-align: center;
+  padding: 1em;
+}
+
 .fill-remaining {
   flex: 1 1 auto;
 }
@@ -50,4 +55,47 @@
 .mb-2,
 .my-2 {
   margin-bottom: 0.5rem !important;
+}
+
+hr.star-dark,
+hr.star-light {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr.star-dark:after,
+hr.star-light:after {
+  position: relative;
+  top: -0.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2em;
+}
+
+hr.star-light {
+  border-color: #fff;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #18bc9c;
+}
+
+hr.star-dark {
+  border-color: #2c3e50;
+}
+
+hr.star-dark:after {
+  color: #2c3e50;
+  background-color: #fff;
 }
