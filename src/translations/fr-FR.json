@@ -1,7 +1,7 @@
 {
-  "APP_NAME": "freelancer-theme",
-  "About": "A propos",
+  "APP_NAME": "VOTRE TITRE",
+  "ABOUT": "A PROPOS",
   "Hello world !": "Bonjour le monde !",
-  "Home": "Accueil",
+  "PORTFOLIO": "PORTFOLIO",
   "Version": "Version"
 }

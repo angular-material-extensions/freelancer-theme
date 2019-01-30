@@ -1,7 +1,7 @@
 {
-  "APP_NAME": "freelancer-theme",
-  "About": "About",
+  "APP_NAME": "YOUR TITLE",
+  "ABOUT": "ABOUT",
   "Hello world !": "Hello world !",
-  "Home": "Home",
+  "PORTFOLIO": "PORTFOLIO",
   "Version": "Version"
 }
