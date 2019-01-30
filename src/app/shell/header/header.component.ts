@@ -1,9 +1,9 @@
 import { Title } from '@angular/platform-browser';
-import { Component, OnInit, Input } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
 import { I18nService } from '@app/core';
+import { Config, ConfigToken } from '../../../config';
 
 @Component({
   selector: 'app-header',
@@ -13,9 +13,16 @@ import { I18nService } from '@app/core';
 export class HeaderComponent implements OnInit {
   @Input() sidenav: MatSidenav;
 
-  constructor(private titleService: Title, private i18nService: I18nService) {}
+  constructor(
+    @Inject(ConfigToken)
+    public config: Config,
+    private titleService: Title,
+    private i18nService: I18nService
+  ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('on ng init: ', this.config);
+  }
 
   setLanguage(language: string) {
     this.i18nService.language = language;
