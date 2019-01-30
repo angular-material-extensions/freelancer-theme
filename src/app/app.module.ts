@@ -6,7 +6,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
-import { Angulartics2Module } from 'angulartics2';
+import { Angulartics2Module, DefaultConfig } from 'angulartics2';
 import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 import { environment } from '@env/environment';
@@ -16,6 +16,7 @@ import { HomeModule } from './home/home.module';
 import { ShellModule } from './shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ConfigToken } from '../config';
 
 @NgModule({
   imports: [
@@ -34,7 +35,12 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
-  providers: [],
+  providers: [
+    {
+      provide: ConfigToken,
+      useValue: DefaultConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
