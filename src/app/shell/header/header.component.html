@@ -1,21 +1,41 @@
+<!--toolbar-->
 <mat-toolbar class="mat-elevation-z6 navbar" color="primary">
   <div fxHide.gt-sm fxLayoutAlign="start center">
-    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()"><mat-icon>menu</mat-icon></button>
+    <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
     <span class="title">{{ title }}</span>
   </div>
   <div fxHide.lt-md>
     <a class="brand" href="https://github.com/ngx-rocket" translate>APP_NAME</a>
+  </div>
+  <span fxFlex></span>
+  <div fxHide.lt-md>
+    <span class="fill-remaining"></span>
     <button mat-button routerLink="/home" routerLinkActive="active">
-      <mat-icon>home</mat-icon>
-      <span translate>Home</span>
+      <span translate>PORTFOLIO</span>
     </button>
     <button mat-button routerLink="/about" routerLinkActive="active">
-      <mat-icon>info</mat-icon>
-      <span translate>About</span>
+      <span translate>ABOUT</span>
+    </button>
+    <button mat-button routerLink="/contact" routerLinkActive="active">
+      <span translate>CONTACT</span>
     </button>
   </div>
-  <span fxFlex></span> <button mat-icon-button [matMenuTriggerFor]="languageMenu"><mat-icon>language</mat-icon></button>
+  <button mat-icon-button [matMenuTriggerFor]="languageMenu">
+    <mat-icon>language</mat-icon>
+  </button>
   <mat-menu #languageMenu="matMenu">
     <button mat-menu-item *ngFor="let language of languages" (click)="setLanguage(language)">{{ language }}</button>
   </mat-menu>
 </mat-toolbar>
+
+<!-- Header -->
+<header class="masthead bg-primary text-white text-center">
+  <div class="container">
+    <img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="" />
+    <h1 class="text-uppercase mb-0">Start Bootstrap</h1>
+    <hr class="star-light" />
+    <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>
+  </div>
+</header>
