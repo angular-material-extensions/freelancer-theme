@@ -7,6 +7,7 @@ export interface Config {
   title: string;
   description: string;
   url: string;
+  imgUrl: string;
   domain?: string;
   skills?: string[];
   techStack?: string[];
