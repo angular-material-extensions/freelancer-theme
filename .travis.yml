@@ -16,6 +16,7 @@ node_js:
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/
 
 before_script:
   - export DISPLAY=:99.0
