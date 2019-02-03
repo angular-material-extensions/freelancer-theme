@@ -11,22 +11,26 @@ addons:
 
 language: node_js
 node_js:
-  - '8'
+  - '10'
 
 branches:
   only:
     - master
     - /^greenkeeper/.*$/
 
+cache:
+  directories:
+    - node_modules
+
 before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - npm install --quiet -g gulp-cli
+#  - npm install --quiet -g gulp-cli
 
 #script: gulp test:ci
 script:
-  - ng test --watch false -cc
-  - npm run e2e
+  #  - ng test --watch false -cc
+  #  - npm run e2e
   - npm run build:prerender
 
 after_success: gulp coveralls
@@ -38,6 +42,3 @@ deploy:
   local_dir: dist
   on:
     branch: master
-
-cache:
-  yarn: true
