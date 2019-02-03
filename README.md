@@ -1,19 +1,69 @@
+<p align="center">
+  <img alt="angular-material-extensions's logo"
+   height="256px" width="256px" style="text-align: center;" 
+   src="assets/angular-material-extensions-logo.svg">
+</p>
+
 # freelancer-theme
 
+[![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/freelancer-theme)
+[![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/freelancer-theme/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/freelancer-theme?branch=master)
+[![Build Status](https://travis-ci.org/angular-material-extensions/freelancer-theme.svg?branch=master)](https://travis-ci.org/angular-material-extensions/freelancer-theme)
+[![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/freelancer-theme/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/freelancer-theme)
+[![dependency Status](https://david-dm.org/angular-material-extensions/freelancer-theme/status.svg)](https://david-dm.org/angular-material-extensions/freelancer-theme)
+[![devDependency Status](https://david-dm.org/angular-material-extensions/freelancer-theme/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/freelancer-theme#info=devDependencies)
+[![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/freelancer-theme.svg)](https://greenkeeper.io/)
+[![license](https://img.shields.io/github/license/angular-material-extensions/freelancer-theme.svg?style=flat-square)](https://github.com/angular-material-extensions/freelancer-theme/blob/master/LICENSE)
 [![Greenkeeper badge](https://badges.greenkeeper.io/angular-material-extensions/freelancer-theme.svg)](https://greenkeeper.io/)
 
-This project was generated with [ngX-Rocket](https://github.com/ngx-rocket/generator-ngx-rocket/)
-version 5.3.0
+<p align="center">
+  <img alt="@angular-material-extensions/freelancer-theme screenshot" style="text-align: center;"
+   src="assets/MDPI_SCREEN.png">
+</p>
+
+## Built by and for developers :heart:
+
+Do you have any question or suggestion ? Please do not hesitate to contact us!
+Alternatively, provide a PR | open an appropriate issue [here](https://github.com/angular-material-extensions/freelancer-theme/issues)
+
+If did you like this project, support [angular-material-extensions](https://github.com/angular-material-extensions)
+by starring :star: and sharing it :loudspeaker:
+
+## Table of Contents
+
+- [Demo](#demo)
+- [Getting started](#getting-started)
+- [Documentation](#documentation)
+- [Run Demo App Locally](#run-demo-app-locally)
+- [Development](#development)
+- [Other Angular Libraries](#other-angular-libraries)
+- [Support](#support)
+- [License](#license)
+
+## [Demo](https://angular-material-extensions.github.io/freelancer-theme)
+
+View all the directives and components in action at [https://angular-material-extensions.github.io/freelancer-theme](https://angular-material-extensions.github.io/freelancer-theme)
+
+<a name="getting-started"/>
 
 # Getting started
 
-1. Go to project folder and install dependencies:
+1. Star this project then clone or fork the repository
 
 ```sh
-npm install
+git clone https://github.com/angular-material-extensions/freelancer-theme.git
 ```
 
-2. Launch development server, and open `localhost:4200` in your browser:
+2. Go to project folder and install dependencies:
+
+```sh
+cd freelancer-theme && npm install
+```
+
+3. Adapt the configuration file to suit your profile
+
+4. Launch development server, and open `localhost:4200` in your browser:
 
 ```sh
 npm start
@@ -145,3 +195,32 @@ Development, build and quality processes are based on [angular-cli](https://gith
 - [Updating dependencies and tools](docs/updating.md)
 - [Using a backend proxy for development](docs/backend-proxy.md)
 - [Browser routing](docs/routing.md)
+
+<a name="other-angular-libraries"/>
+
+## Other Angular Libraries and Projects
+
+- [ngx-auth-firebaseui](https://github.com/AnthonyNahas/ngx-auth-firebaseui)
+- [ngx-linkifyjs](https://github.com/AnthonyNahas/ngx-linkifyjs)
+- [@firebaseui/ng-bootstrap](https://github.com/firebaseui/ng-bootstrap)
+- [@angular-material-extensions/pages](https://github.com/angular-material-extensions/pages)
+- [@angular-material-extensions/google-maps-autocomplete](https://github.com/angular-material-extensions/google-maps-autocomplete)
+- [@angular-material-extensions/link-preview](https://github.com/angular-material-extensions/link-preview)
+- [@angular-material-extensions/password-strength](https://github.com/angular-material-extensions/password-strength)
+- [@angular-material-extensions/faq](https://github.com/angular-material-extensions/faq)
+- [@angular-material-extensions/contacts](https://github.com/angular-material-extensions/contacts)
+- [@angular-material-extensions/combination-generator](https://github.com/angular-material-extensions/combination-generator)
+
+<a name="support"/>
+
+## Support
+
+- Drop an email to: [Anthony Nahas](mailto:anthony.na@hotmail.de)
+- or open an appropriate [issue](https://github.com/angular-material-extensions/freelancer-theme/issues)
+- let us chat on [Gitter](https://gitter.im/angular-material-extensions/Lobby)
+
+Built by and for developers :heart: we will help you :punch:
+
+## License
+
+Copyright (c) 2019 [Anthony Nahas](https://github.com/AnthonyNahas). Licensed under the MIT License (MIT)
