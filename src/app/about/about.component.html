@@ -1,18 +1,8 @@
 <div class="container">
-  <mat-card>
-    <h1>
-      <mat-card-title translate>APP_NAME</mat-card-title>
-    </h1>
-    <mat-card-content>
-      <mat-icon>code</mat-icon>
-      <span translate>Version</span> {{ version }}
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card>
+  <mat-card class="bg-primary">
     <mat-card-content>
       <!-- About Section -->
-      <section class="bg-primary text-white mb-0" id="about">
+      <section class="text-white mb-0" id="about">
         <div class="container">
           <h2 class="text-center text-uppercase text-white">About</h2>
           <hr class="star-light mb-5" />
@@ -32,9 +22,9 @@
             </div>
           </div>
           <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="#">
-              <i class="fas fa-download mr-2"></i>
-              Download Now!
+            <a mat-raised-button href="#">
+              <mat-icon>download</mat-icon>
+              Download Now {{ 'version' | translate }} {{ version }}!
             </a>
           </div>
         </div>
