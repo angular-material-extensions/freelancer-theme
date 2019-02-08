@@ -57,6 +57,11 @@
   margin-bottom: 0.5rem !important;
 }
 
+.mb-4,
+.my-4 {
+  margin-bottom: 1.5rem !important;
+}
+
 .img-fluid {
   max-height: 400px;
   max-width: 100%;
@@ -79,49 +84,6 @@
   .img-project {
     max-height: 400px;
   }
-}
-
-hr.star-dark,
-hr.star-light {
-  max-width: 15rem;
-  padding: 0;
-  text-align: center;
-  border: none;
-  border-top: solid 0.25rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr.star-dark:after,
-hr.star-light:after {
-  position: relative;
-  top: -0.8em;
-  display: inline-block;
-  padding: 0 0.25em;
-  content: "\f005";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 2em;
-}
-
-hr.star-light {
-  border-color: #fff;
-}
-
-hr.star-light:after {
-  color: #fff;
-  background-color: #18bc9c;
-}
-
-hr.star-dark {
-  border-color: #2c3e50;
-}
-
-hr.star-dark:after {
-  color: #2c3e50;
-  background-color: #fff;
 }
 
 .margin-auto {
@@ -156,4 +118,22 @@ hr.star-dark:after {
   color: #fff !important;
   padding-bottom: 1.5rem !important;
   padding-top: 1.5rem !important;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.mat-divider {
+  left: auto !important;
+  max-width: 15rem;
+  //padding: 0;
+  text-align: center;
+  border: none #fff;
+  border-top: 0.25rem solid;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  box-sizing: border-box;
 }
