@@ -13,7 +13,7 @@ describe('AboutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BrowserAnimationsModule, TranslateModule, FlexLayoutModule, MaterialModule],
+      imports: [BrowserAnimationsModule, TranslateModule.forRoot(), FlexLayoutModule, MaterialModule],
       declarations: [AboutComponent],
       providers: [
         TranslateService,

@@ -11,6 +11,8 @@ import { MaterialModule } from '../../material.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
 import { ConfigToken, DEFAULT_CONFIG } from '../../../config';
+import { AboutComponent } from '@app/components/about/about.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -20,15 +22,16 @@ describe('HomeComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         BrowserAnimationsModule,
+        TranslateModule.forRoot(),
+        Angulartics2Module.forRoot(),
         FlexLayoutModule,
         MaterialModule,
         RouterTestingModule,
-        Angulartics2Module.forRoot(),
         CoreModule,
         SharedModule,
         HttpClientTestingModule
       ],
-      declarations: [HomeComponent],
+      declarations: [HomeComponent, AboutComponent],
       providers: [
         QuoteService,
         {
