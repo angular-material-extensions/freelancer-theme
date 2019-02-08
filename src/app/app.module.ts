@@ -12,15 +12,17 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 import { environment } from '@env/environment';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
-import { HomeModule } from './home/home.module';
-import { ShellModule } from './shell/shell.module';
+import { HomeModule } from './components/home/home.module';
+import { ShellModule } from './components/shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ProjectDialogComponent } from '@app/components/project-dialog/project-dialog.component';
 
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'freelancer-theme' }),
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
+    Angulartics2Module.forRoot(),
     TranslateModule.forRoot(),
     SharedModule.forRoot(),
     FormsModule,
@@ -30,10 +32,10 @@ import { AppRoutingModule } from './app-routing.module';
     CoreModule,
     ShellModule,
     HomeModule,
-    Angulartics2Module.forRoot(),
     AppRoutingModule // must be imported as the last module as it contains the fallback route.
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProjectDialogComponent],
+  entryComponents: [ProjectDialogComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

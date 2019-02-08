@@ -3,9 +3,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MaterialModule } from '@app/material.module';
+import { MaterialModule } from '../../material.module';
 
-import { CoreModule } from '@app/core';
+import { CoreModule } from '../../core';
 
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';

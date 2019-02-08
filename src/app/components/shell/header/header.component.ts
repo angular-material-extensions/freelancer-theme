@@ -2,8 +2,8 @@ import { Title } from '@angular/platform-browser';
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
-import { I18nService } from '@app/core';
-import { Config, ConfigToken } from '../../../config';
+import { I18nService } from '../../../core';
+import { ConfigToken, Config } from '../../../../config';
 
 @Component({
   selector: 'app-header',

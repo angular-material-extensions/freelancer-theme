@@ -1,0 +1,142 @@
+<div class="container">
+  <!--<button-->
+  <!--mat-raised-button-->
+  <!--angulartics2On="click"-->
+  <!--angularticsAction="Click button below quote"-->
+  <!--[angularticsCategory]="quote"-->
+  <!--&gt;-->
+
+  <mat-card *ngIf="config?.projects && config?.projects.length > 0">
+    <mat-card-content>
+      <!-- Portfolio Grid Section -->
+      <section class="portfolio" id="portfolio">
+        <div class="container" gdAuto>
+          <h2 class="text-center text-uppercase text-secondary mb-0 mat-display-2" translate>
+            PORTFOLIO
+          </h2>
+          <div fxLayout="column" fxLayoutAlign="center center">
+            <div fxFlexAlign="center center">
+              <mat-icon fxFlexAlign="center center" style="width: 100px;font-size: 56px;color: #37474f">
+                star
+              </mat-icon>
+            </div>
+          </div>
+
+          <div fxLayout="row wrap" fxLayoutAlign="center" *ngFor="let project of config.projects">
+            <div mat-ripple class="project" (click)="openProjectDialog(project)">
+              <div
+                class="project portfolio-item d-block margin-auto portfolio-item-caption d-flex position-absolute h-100 w-100"
+              >
+                <img
+                  class="img-project img-fluid"
+                  [src]="project?.imageURL"
+                  [alt]="'project image of ' + project?.name"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<app-about></app-about>
+
+<!-- Contact Section -->
+<section id="contact">
+  <div class="container">
+    <mat-card>
+      <!--<mat-card-header>-->
+      <h2 class="mat-display-2 text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <div fxFlexAlign="center center">
+          <mat-icon fxFlexAlign="center center" style="width: 100px;font-size: 56px;color: #37474f">
+            star
+          </mat-icon>
+        </div>
+      </div>
+      <!--</mat-card-header>-->
+      <mat-card-content fxLayoutAlign="center">
+        <form class="contact-form" action="https://formspree.io/anthony.na@hotmail.com" method="POST">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matNativeControl id="name" name="name" type="text" placeholder="Name" required="required" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input
+              matInput
+              #characterCountInputHintExample
+              maxLength="40"
+              id="email"
+              name="_replyto"
+              type="email"
+              placeholder="Email Address"
+              required="required"
+            />
+            <mat-hint align="end" aria-live="polite">
+              {{ characterCountInputHintExample.value.length }} / 100
+            </mat-hint>
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Phone Number</mat-label>
+            <input matInput #characterCountInputHintExample maxLength="20" />
+          </mat-form-field>
+
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Message</mat-label>
+            <textarea matInput #characterCountTextareaHintExample maxLength="100"></textarea>
+            <mat-hint align="end" aria-live="polite">
+              {{ characterCountTextareaHintExample.value.length }} / 100
+            </mat-hint>
+          </mat-form-field>
+
+          <button class="full-width" mat-raised-button color="accent">
+            Send
+          </button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center">
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">{{ 'ADDRESS' | translate }}</h2>
+        <p class="lead mb-0">
+          {{ config?.address?.street }}
+          <br />{{ config?.address?.city }}, {{ config?.address?.zip }} <br />{{ config?.address?.state }},
+          {{ config?.address?.country }}
+        </p>
+      </div>
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">Around the Web</h2>
+        <div fxLayout="row">
+          <!--buttons-->
+        </div>
+      </div>
+      <div fxFlex="30">
+        <h2 class="text-uppercase mb-4 mat-h2">About Freelancer</h2>
+        <p class="lead mb-0">
+          Freelance is a free to use, open source Angular Material theme created by
+          <a mat-button color="accent" href="https://github.com/angular-material-extensions">
+            Angular Material Extensions</a
+          >
+          based on startboostrap theme
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright py-4 text-center text-white">
+  <div class="container">
+    <small>Copyright &copy; Your Website 2019</small>
+  </div>
+</div>

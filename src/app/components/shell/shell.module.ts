@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
-import { SharedModule } from '@app/shared';
+import { SharedModule } from '../../shared';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, SharedModule, RouterModule],

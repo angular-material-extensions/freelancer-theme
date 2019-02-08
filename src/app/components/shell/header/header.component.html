@@ -43,7 +43,11 @@
             alt=""
           />
           <h1 class="text-uppercase mb-0 mat-display-1">{{ config.title }}</h1>
-          <hr class="star-light" />
+          <div fxLayout="column" fxLayoutAlign="center center" style="margin: 2rem;">
+            <div fxFlexAlign="center center">
+              <mat-icon fxFlexAlign="center center" style="width: 100px;font-size: 56px;">star </mat-icon>
+            </div>
+          </div>
           <h2 class="font-weight-light mb-0 mat-h2">{{ config.description }}</h2>
         </div>
       </header>

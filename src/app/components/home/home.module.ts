@@ -4,13 +4,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { Angulartics2Module } from 'angulartics2';
 
-import { CoreModule } from '@app/core';
-import { SharedModule } from '@app/shared';
-import { MaterialModule } from '@app/material.module';
+import { CoreModule } from '../../core';
+import { SharedModule } from '../../shared';
+import { MaterialModule } from '../../material.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
-import { AboutComponent } from '@app/about/about.component';
+import { AboutComponent } from '../about/about.component';
 
 @NgModule({
   imports: [
