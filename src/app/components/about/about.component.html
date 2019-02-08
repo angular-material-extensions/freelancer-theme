@@ -5,19 +5,20 @@
       <section class="text-white mb-0" id="about">
         <div class="container">
           <h2 class="text-center text-uppercase text-white">About</h2>
-          <hr class="star-light mb-5" />
+          <div fxLayout="column" fxLayoutAlign="center center" style="margin: 2rem;">
+            <div fxFlexAlign="center center">
+              <mat-icon fxFlexAlign="center center" style="width: 100px;font-size: 56px;">star </mat-icon>
+            </div>
+          </div>
           <div class="row">
-            <div class="col-lg-4 ml-auto">
-              <p class="lead">
-                Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete
-                source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy
-                customization.
+            <div fxLayout="column" fxLayoutAlign="center">
+              <p class="lead mat-body">
+                {{ config?.about }}
               </p>
             </div>
-            <div class="col-lg-4 mr-auto">
+            <div fxLayout="column" fxLayoutAlign="center">
               <p class="lead">
-                Whether you're a student looking to showcase your work, a professional looking to attract clients, or a
-                graphic artist looking to share your projects, this template is the perfect starting point!
+                <!--{{ config?.about }}-->
               </p>
             </div>
           </div>
