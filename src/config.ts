@@ -1,41 +1,53 @@
-/**
- * @author Anthony Nahas
- * @since 01.2019
- * @version 1.0
- */
+import { Config, Project } from './config.interface';
 import { InjectionToken } from '@angular/core';
 
-export interface Config {
-  title: string;
-  description: string;
-  url: string;
-  imgUrl?: string;
-  domain?: string;
-  about?: string;
-  skills?: string[];
-  techStack?: string[];
+export { Config } from './config.interface';
 
-  social?: {
-    twitterUserName?: string;
-    facebookUserName?: string;
-    githubUserName?: string;
-    linkedInUserName?: string;
-  };
+const exampleProjectDescription: string =
+  'Lorem ipsum dolor sit amet, ' +
+  'consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil,' +
+  ' molestias magnam, recusandae quos quis inventore quisquam velit asperiores,' +
+  ' vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.';
 
-  address?: {
-    street?: string;
-    zip?: string;
-    city?: string;
-    state?: string;
-    country?: string;
-  };
-}
+const projects: Project[] = [
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/cabin.png'
+  },
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/cake.png'
+  },
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/circus.png'
+  },
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/game.png'
+  },
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/safe.png'
+  },
+  {
+    name: 'project name',
+    description: exampleProjectDescription,
+    imageURL: 'assets/img/portfolio/submarine.png'
+  }
+];
 
 export const DEFAULT_CONFIG: Config = {
   title: 'Angular Material Freenlancer Theme',
   description: 'Web Developer - Graphic Artist - User Experience Designer',
   url: 'https://github.com/angular-material-extensions/freelancer-theme',
   domain: 'github.com',
+  projects: projects,
   about:
     'This Freelancer Theme is a free material theme created by angular material extensions based on Start' +
     ' Bootstrap.The download includes the complete source files including HTML, CSS, and JavaScript as well as ' +
@@ -47,7 +59,7 @@ export const DEFAULT_CONFIG: Config = {
     state: 'Niedersachen',
     city: 'Göttingen',
     street: 'meine Strasse',
-    zip: '0000'
+    zip: '1234'
   }
 };
 
