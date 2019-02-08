@@ -10,6 +10,7 @@ import { SharedModule } from '../../shared';
 import { MaterialModule } from '../../material.module';
 import { HomeComponent } from './home.component';
 import { QuoteService } from './quote.service';
+import { ConfigToken, DEFAULT_CONFIG } from '../../../config';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -28,7 +29,13 @@ describe('HomeComponent', () => {
         HttpClientTestingModule
       ],
       declarations: [HomeComponent],
-      providers: [QuoteService]
+      providers: [
+        QuoteService,
+        {
+          provide: ConfigToken,
+          useValue: DEFAULT_CONFIG
+        }
+      ]
     }).compileComponents();
   }));
 

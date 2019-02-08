@@ -5,6 +5,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { MaterialModule } from '../../../material.module';
 import { I18nService } from '../../../core';
 import { HeaderComponent } from './header.component';
+import { ConfigToken, DEFAULT_CONFIG } from '../../../../config';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -14,7 +15,13 @@ describe('HeaderComponent', () => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, MaterialModule, TranslateModule.forRoot()],
       declarations: [HeaderComponent],
-      providers: [I18nService]
+      providers: [
+        I18nService,
+        {
+          provide: ConfigToken,
+          useValue: DEFAULT_CONFIG
+        }
+      ]
     }).compileComponents();
   }));
 

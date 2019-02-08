@@ -9,6 +9,7 @@ import { CoreModule } from '../../core';
 
 import { ShellComponent } from './shell.component';
 import { HeaderComponent } from './header/header.component';
+import { ConfigToken, DEFAULT_CONFIG } from '../../../config';
 
 describe('ShellComponent', () => {
   let component: ShellComponent;
@@ -24,7 +25,13 @@ describe('ShellComponent', () => {
         MaterialModule,
         CoreModule
       ],
-      declarations: [HeaderComponent, ShellComponent]
+      declarations: [HeaderComponent, ShellComponent],
+      providers: [
+        {
+          provide: ConfigToken,
+          useValue: DEFAULT_CONFIG
+        }
+      ]
     }).compileComponents();
   }));
 

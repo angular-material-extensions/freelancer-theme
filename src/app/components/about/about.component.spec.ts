@@ -4,6 +4,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { MaterialModule } from '../../material.module';
 import { AboutComponent } from './about.component';
+import { ConfigToken, DEFAULT_CONFIG } from '../../../config';
+import { TranslateModule, TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 describe('AboutComponent', () => {
   let component: AboutComponent;
@@ -11,8 +13,15 @@ describe('AboutComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BrowserAnimationsModule, FlexLayoutModule, MaterialModule],
-      declarations: [AboutComponent]
+      imports: [BrowserAnimationsModule, TranslateModule, FlexLayoutModule, MaterialModule],
+      declarations: [AboutComponent],
+      providers: [
+        TranslateService,
+        {
+          provide: ConfigToken,
+          useValue: DEFAULT_CONFIG
+        }
+      ]
     }).compileComponents();
   }));
 
