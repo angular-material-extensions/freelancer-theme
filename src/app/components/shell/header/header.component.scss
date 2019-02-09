@@ -18,33 +18,33 @@
   margin-right: 1rem;
 }
 
-header.masthead {
+header .masthead {
   padding-top: calc(1rem + 72px);
   padding-bottom: 3rem;
 }
 
-header.masthead h1 {
+header .masthead h1 {
   font-size: 3rem;
   line-height: 3rem;
 }
 
-header.masthead h2 {
+header .masthead h2 {
   font-size: 1.3rem;
-  font-family: Lato;
+  //font-family: Lato;
 }
 
 @media (min-width: 992px) {
-  header.masthead {
+  header .masthead {
     padding-top: calc(1rem + 106px);
     padding-bottom: 6rem;
   }
 
-  header.masthead h1 {
+  header .masthead h1 {
     font-size: 4.75em;
     line-height: 4rem;
   }
 
-  header.masthead h2 {
+  header .masthead h2 {
     font-size: 1.75em;
   }
 }
