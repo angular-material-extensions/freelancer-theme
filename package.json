@@ -7,7 +7,7 @@
     "build": "npm run env -s && ng build --prod",
     "build:doc": "cd ../ && gulp build:doc",
     "build:prod": "ng build --prod ",
-    "build:client-and-server-bundles": "ng build --prod && ng run freelancer-theme:server:production",
+    "build:client-and-server-bundles": "npm run env -s && ng build --prod && ng run freelancer-theme:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run webpack:server && npm run generate:prerender",
     "build:ssr": "npm run build:client-and-server-bundles && npm run webpack:server",
     "clean": "rm -rf dist",
