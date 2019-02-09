@@ -43,9 +43,9 @@ jobs:
           key: *dist_key
       - run:
           name: test
-          command: npm run test:app
+          command: npm run test:ci
 
-  build-app:
+  build-prerender-app:
     <<: *job_defaults
     steps:
       - checkout
@@ -53,7 +53,7 @@ jobs:
           key: *cache_key
       - run:
           name: test
-          command: npm run build
+          command: npm run build:prerender
       - save_cache:
           key: *dist_key
           paths:
@@ -82,13 +82,13 @@ workflows:
       - test-app:
           requires:
             - install
-      - build-app:
+      - build-prerender-app:
           requires:
             - lint
             - test-app
       - release:
           requires:
-            - build-app
+            - build-prerender-app
           filters:
             branches:
               only: master
