@@ -45,7 +45,7 @@ jobs:
           name: test
           command: npm run test:app
 
-  build-lib:
+  build-app:
     <<: *job_defaults
     steps:
       - checkout
@@ -82,7 +82,7 @@ workflows:
       - test-app:
           requires:
             - install
-      - build-lib:
+      - build-app:
           requires:
             - lint
             - test-app
