@@ -86,3 +86,9 @@ workflows:
           requires:
             - lint
             - test-app
+      - release:
+          requires:
+            - build-app
+          filters:
+            branches:
+              only: master
