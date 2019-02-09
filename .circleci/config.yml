@@ -5,8 +5,8 @@ job_defaults: &job_defaults
     - image: circleci/node:latest
   working_directory: ~/project/repo
 
-cache_key: &cache_key @angular-material-extension/freelancer-theme-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
-dist_key: &dist_key @angular-material-extension/freelancer-theme-dist-{{ .Revision }}
+cache_key: &cache_key angular-material-extension/freelancer-theme-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+dist_key: &dist_key angular-material-extension/freelancer-theme-dist-{{ .Revision }}
 
 jobs:
   install:
