@@ -85,7 +85,7 @@ workflows:
       - build-prerender-app:
           requires:
             - lint
-            - test-app
+      #            - test-app
       - release:
           requires:
             - build-prerender-app
