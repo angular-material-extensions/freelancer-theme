@@ -1,0 +1,71 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.7cc43b0367c5fde2cdbd.js",
+        "/polyfills.493406d110d9255e1f25.js",
+        "/runtime.a5dd35324ddfd942bef1.js",
+        "/styles.8c53cb0de003042a9fbd.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/img/portfolio/cabin.png",
+        "/assets/img/portfolio/cake.png",
+        "/assets/img/portfolio/circus.png",
+        "/assets/img/portfolio/game.png",
+        "/assets/img/portfolio/safe.png",
+        "/assets/img/portfolio/submarine.png",
+        "/assets/img/profile.png",
+        "/assets/ngx-rocket-logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/img/portfolio/cabin.png": "5ee7a53260c426e56b2778e54f9cd75ba43c2546",
+    "/assets/img/portfolio/cake.png": "a86e89bd4608e1c42d97725d051e458976176eb5",
+    "/assets/img/portfolio/circus.png": "734d64dd23e50fc4357df6662b7d460b82554fc5",
+    "/assets/img/portfolio/game.png": "e77891c87c21b2191ca8ad39a510193962bcf025",
+    "/assets/img/portfolio/safe.png": "630eff3357a16c78cb6b6ab1bea8abea066eaaa1",
+    "/assets/img/portfolio/submarine.png": "47a68fc616ea560e28c8fe0fff4a0828fdb7b377",
+    "/assets/img/profile.png": "5448d1040cec523266fa2ff7b21b82f0947ab8b9",
+    "/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
+    "/index.html": "fdd14ef9c9e9869be1a833e58bfb4541e5b7ea80",
+    "/main.7cc43b0367c5fde2cdbd.js": "1c4a922cede87af70e7e238b421698070c1cffd2",
+    "/polyfills.493406d110d9255e1f25.js": "6946e10a03311677a01490b8e91741668e64e17e",
+    "/runtime.a5dd35324ddfd942bef1.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "/styles.8c53cb0de003042a9fbd.css": "4e6eb12f6a93bd0daf47777505a089012d84b807"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
