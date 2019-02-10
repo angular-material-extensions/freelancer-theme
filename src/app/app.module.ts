@@ -17,11 +17,13 @@ import { ShellModule } from './components/shell/shell.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProjectDialogComponent } from '@app/components/project-dialog/project-dialog.component';
+import { NgxWebstorageModule } from 'ngx-webstorage';
 
 @NgModule({
   imports: [
     BrowserModule.withServerTransition({ appId: 'freelancer-theme' }),
     ServiceWorkerModule.register('./ngsw-worker.js', { enabled: environment.production }),
+    NgxWebstorageModule.forRoot(),
     Angulartics2Module.forRoot(),
     TranslateModule.forRoot(),
     SharedModule.forRoot(),
