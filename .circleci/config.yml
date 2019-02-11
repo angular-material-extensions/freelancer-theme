@@ -3,6 +3,8 @@ version: 2
 job_defaults: &job_defaults
   docker:
     - image: circleci/node:latest
+      environment:
+        CHROME_BIN: '/usr/bin/google-chrome'
   working_directory: ~/project/repo
 
 cache_key: &cache_key angular-material-extension/freelancer-theme-deps-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
@@ -81,6 +83,18 @@ jobs:
           key: *dist_key
       - run:
           name: release
+          command: npm run deploy:demo
+
+  deploy-app:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: deploy-app
           command: npm run semantic-release || true
 
 workflows:
@@ -104,6 +118,9 @@ workflows:
       - release:
           requires:
             - build-prerender-app
+      - deploy-app:
+          requires:
+            - release
           filters:
             branches:
               only: master
