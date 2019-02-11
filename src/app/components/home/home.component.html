@@ -22,17 +22,18 @@
             </div>
           </div>
 
-          <div fxLayout="row wrap" fxLayoutAlign="center" *ngFor="let project of config.projects">
-            <div mat-ripple class="project" (click)="openProjectDialog(project)">
-              <div
-                class="project portfolio-item d-block margin-auto portfolio-item-caption d-flex position-absolute h-100 w-100"
-              >
-                <img
-                  class="img-project img-fluid"
-                  [src]="project?.imageURL"
-                  [alt]="'project image of ' + project?.name"
-                />
-              </div>
+          <div fxLayout="row wrap" fxLayoutAlign="center">
+            <div
+              (click)="openProjectDialog(project)"
+              *ngFor="let project of config.projects"
+              class="project"
+              mat-ripple
+            >
+              <img
+                [alt]="'project image of ' + project?.name"
+                [src]="project?.imageURL"
+                class="img-project img-fluid"
+              />
             </div>
           </div>
         </div>

@@ -4,15 +4,30 @@
       <nav>
         <mat-list>
           <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/home" routerLinkActive="active" (click)="sidenav.close()">
+          <a
+            (click)="sidenav.close(); scrollToElementByID('portfolio')"
+            mat-list-item
+            routerLink="/home"
+            routerLinkActive="active"
+          >
             <span translate>PORTFOLIO</span>
           </a>
           <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/about" routerLinkActive="active" (click)="sidenav.close()">
+          <a
+            (click)="sidenav.close(); scrollToElementByID('about')"
+            mat-list-item
+            routerLink="/about"
+            routerLinkActive="active"
+          >
             <span translate>ABOUT</span>
           </a>
           <mat-divider></mat-divider>
-          <a mat-list-item routerLink="/contact" routerLinkActive="active" (click)="sidenav.close()">
+          <a
+            (click)="sidenav.close(); scrollToElementByID('contact')"
+            mat-list-item
+            routerLink="/contact"
+            routerLinkActive="active"
+          >
             <span translate>CONTACT</span>
           </a>
           <mat-divider></mat-divider>

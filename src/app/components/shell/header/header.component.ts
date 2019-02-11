@@ -3,7 +3,8 @@ import { Component, Inject, Input, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
 import { I18nService } from '../../../core';
-import { ConfigToken, Config } from '../../../../config';
+import { Config, ConfigToken } from '../../../../config';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +15,8 @@ export class HeaderComponent implements OnInit {
   @Input() sidenav: MatSidenav;
 
   constructor(
-    @Inject(ConfigToken)
-    public config: Config,
+    @Inject(ConfigToken) public config: Config,
+    @Inject(DOCUMENT) private document: any,
     private titleService: Title,
     private i18nService: I18nService
   ) {}
@@ -38,5 +39,9 @@ export class HeaderComponent implements OnInit {
 
   get title(): string {
     return this.titleService.getTitle();
+  }
+
+  scrollToElementByID(id: string): void {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 }

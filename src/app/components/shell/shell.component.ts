@@ -19,4 +19,8 @@ export class ShellComponent implements OnInit {
       .pipe(filter((change: MediaChange) => change.mqAlias !== 'xs' && change.mqAlias !== 'sm'))
       .subscribe(() => this.sidenav.close());
   }
+
+  scrollToElementByID(id: string): void {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+  }
 }

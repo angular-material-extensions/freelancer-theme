@@ -12,13 +12,13 @@
   <span fxFlex></span>
   <div fxHide.lt-md>
     <span class="fill-remaining"></span>
-    <button mat-button routerLink="/home" routerLinkActive="active">
+    <button (click)="scrollToElementByID('portfolio')" mat-button routerLink="/home" routerLinkActive="active">
       <span translate>PORTFOLIO</span>
     </button>
-    <button mat-button routerLink="/about" routerLinkActive="active">
+    <button (click)="scrollToElementByID('about')" mat-button routerLink="/about" routerLinkActive="active">
       <span translate>ABOUT</span>
     </button>
-    <button mat-button routerLink="/contact" routerLinkActive="active">
+    <button (click)="scrollToElementByID('contact')" mat-button routerLink="/contact" routerLinkActive="active">
       <span translate>CONTACT</span>
     </button>
   </div>
