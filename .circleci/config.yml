@@ -67,7 +67,7 @@ jobs:
           key: *cache_key
       - run:
           name: test
-          command: npm run build:prerender
+          command: npm run build:prerender:ci
       - save_cache:
           key: *dist_key
           paths:
