@@ -45,6 +45,18 @@ jobs:
           name: test
           command: npm run test:ci
 
+  codecov:
+    <<: *job_defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: *cache_key
+      - restore_cache:
+          key: *dist_key
+      - run:
+          name: codecov
+          command: npx codecov
+
   build-prerender-app:
     <<: *job_defaults
     steps:
@@ -82,6 +94,9 @@ workflows:
       - test-app:
           requires:
             - install
+      - codecov:
+          requires:
+            - test-app
       - build-prerender-app:
           requires:
             - lint

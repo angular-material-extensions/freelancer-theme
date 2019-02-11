@@ -8,8 +8,7 @@
 
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/freelancer-theme)
 [![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Coverage Status](https://coveralls.io/repos/github/angular-material-extensions/freelancer-theme/badge.svg?branch=master)](https://coveralls.io/github/angular-material-extensions/freelancer-theme?branch=master)
-[![Build Status](https://travis-ci.org/angular-material-extensions/freelancer-theme.svg?branch=master)](https://travis-ci.org/angular-material-extensions/freelancer-theme)
+[![codecov](https://codecov.io/gh/angular-material-extensions/freelancer-theme/branch/master/graph/badge.svg)](https://codecov.io/gh/angular-material-extensions/freelancer-theme)
 [![CircleCI branch](https://img.shields.io/circleci/project/github/angular-material-extensions/freelancer-theme/master.svg?label=circleci)](https://circleci.com/gh/angular-material-extensions/freelancer-theme)
 [![dependency Status](https://david-dm.org/angular-material-extensions/freelancer-theme/status.svg)](https://david-dm.org/angular-material-extensions/freelancer-theme)
 [![devDependency Status](https://david-dm.org/angular-material-extensions/freelancer-theme/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/freelancer-theme#info=devDependencies)
