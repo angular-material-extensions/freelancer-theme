@@ -97,6 +97,7 @@
 
 .project {
   margin: 0.5rem;
+  cursor: pointer;
 }
 
 .full-width {
@@ -143,9 +144,6 @@
 }
 
 .mat-icon-star {
-  width: 100px;
-  font-size: 56px;
-
   .grey {
     color: #37474f;
   }
