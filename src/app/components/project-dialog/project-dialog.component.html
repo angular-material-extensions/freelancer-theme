@@ -1,4 +1,4 @@
-<div fxLayout="row">
+<div>
   <h1 matDialogTitle class="text-uppercase">{{ data.name }}</h1>
   <span fxFlex></span>
   <button mat-icon-button matDialogClose color="accent">
@@ -7,13 +7,16 @@
 </div>
 
 <mat-dialog-content>
-  <div class="project portfolio-item d-block margin-auto portfolio-item-caption d-flex position-absolute h-100 w-100">
+  <div
+    fxLayout="column"
+    fxLayoutAlign="center center"
+    class="project portfolio-item d-block margin-auto portfolio-item-caption d-flex position-absolute h-100 w-100"
+  >
     <img class="img-project img-fluid" [src]="data?.imageURL" [alt]="'project image of ' + data?.name" />
+    <p>{{ data.description }}</p>
   </div>
-  {{ data.description }}
 </mat-dialog-content>
 
 <mat-dialog-actions fxLayoutAlign="center center">
-  <button color="accent" mat-button matDialogClose>Close</button>
-  <button color="accent" mat-button>Visit</button>
+  <button color="accent" mat-raised-button>Visit</button>
 </mat-dialog-actions>
