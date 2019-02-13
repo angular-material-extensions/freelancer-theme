@@ -118,6 +118,9 @@ workflows:
       - release:
           requires:
             - build-prerender-app
+          filters:
+            branches:
+              only: master
       - deploy-app:
           requires:
             - release
