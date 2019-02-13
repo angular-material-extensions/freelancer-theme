@@ -7,25 +7,26 @@
           <h2 class="text-center text-uppercase text-white">About</h2>
           <div fxLayout="column" fxLayoutAlign="center center" class="m-4">
             <div fxFlexAlign="center center">
-              <mat-icon fxFlexAlign="center center" class="mat-icon-star">star </mat-icon>
+              <mat-icon class="mat-icon-star" fxFlexAlign="center center">star</mat-icon>
             </div>
           </div>
           <div class="row">
-            <div fxLayout="column" fxLayoutAlign="center">
-              <p class="lead mat-body">
-                {{ config?.about }}
-              </p>
-            </div>
-            <div fxLayout="column" fxLayoutAlign="center">
-              <p class="lead">
-                <!--{{ config?.about }}-->
-              </p>
+            <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center">
+              <div fxFlex="50">
+                <p class="lead mat-body text-center">
+                  {{ config?.about?.section1 }}
+                </p>
+              </div>
+              <div fxFlex="50">
+                <p class="lead mat-body text-center">
+                  {{ config?.about?.section2 }}
+                </p>
+              </div>
             </div>
           </div>
           <div class="text-center mt-4">
-            <a mat-raised-button href="#">
-              <mat-icon>download</mat-icon>
-              Download Now {{ 'version' | translate }} {{ version }}!
+            <a href="assets/pdf/graduate_software_engineer.pdf" mat-icon-button target="_blank">
+              <mat-icon>cloud_download</mat-icon>
             </a>
           </div>
         </div>
