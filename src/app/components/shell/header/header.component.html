@@ -4,7 +4,7 @@
     <button class="menu-button" mat-icon-button (click)="sidenav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="title">{{ title }}</span>
+    <span class="title">{{ config.title }}</span>
   </div>
   <div fxHide.lt-md>
     <a class="brand" href="https://github.com/angular-material-extensions/freelancer-theme">{{ config.title }}</a>
@@ -13,13 +13,13 @@
   <div fxHide.lt-md>
     <span class="fill-remaining"></span>
     <button (click)="scrollToElementByID('portfolio')" mat-button routerLink="/home" routerLinkActive="active">
-      <span translate>PORTFOLIO</span>
+      <span class="text-uppercase" translate>PORTFOLIO</span>
     </button>
     <button (click)="scrollToElementByID('about')" mat-button routerLink="/about" routerLinkActive="active">
-      <span translate>ABOUT</span>
+      <span class="text-uppercase" translate>ABOUT</span>
     </button>
     <button (click)="scrollToElementByID('contact')" mat-button routerLink="/contact" routerLinkActive="active">
-      <span translate>CONTACT</span>
+      <span class="text-uppercase" translate>CONTACT.SELF</span>
     </button>
   </div>
   <button mat-icon-button [matMenuTriggerFor]="languageMenu">
