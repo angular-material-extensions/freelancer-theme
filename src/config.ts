@@ -48,12 +48,22 @@ export const DEFAULT_CONFIG: Config = {
   url: 'https://github.com/angular-material-extensions/freelancer-theme',
   domain: 'github.com',
   projects: projects,
-  about:
-    'This Freelancer Theme is a free material theme created by angular material extensions based on Start' +
-    ' Bootstrap.The download includes the complete source files including HTML, CSS, and JavaScript as well as ' +
-    'optional LESS stylesheets for easy customization. Whether you are a student looking to showcase your work, a' +
-    ' professional looking to attract clients, or a graphic artist looking to share your projects, this template ' +
-    'is the perfect starting point!',
+  about: {
+    section1:
+      'This Freelancer Theme is a free material theme created by angular material extensions based on Start' +
+      ' Bootstrap.The download includes the complete source files including HTML, CSS, and JavaScript as well as ' +
+      'optional LESS stylesheets for easy customization.',
+    section2:
+      'Whether you are a student looking to showcase your work, a' +
+      ' professional looking to attract clients, or a graphic artist looking to share your projects, this template ' +
+      'is the perfect starting point!'
+  },
+  social: {
+    facebook: 'https://www.facebook.com/',
+    twitter: 'https://twitter.com/ngAnthonyy',
+    github: 'https://github.com/AnthonyNahas',
+    linkedin: 'https://www.linkedin.com/in/anthony-nahas-926245119/'
+  },
   address: {
     country: 'Germany',
     state: 'Niedersachen',

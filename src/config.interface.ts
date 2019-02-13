@@ -10,16 +10,19 @@ export interface Config {
   url: string;
   imgUrl?: string;
   domain?: string;
-  about?: string;
+  about?: {
+    section1: string;
+    section2: string;
+  };
   skills?: string[];
   techStack?: string[];
   projects?: Project[];
 
   social?: {
-    twitterUserName?: string;
-    facebookUserName?: string;
-    githubUserName?: string;
-    linkedInUserName?: string;
+    twitter?: string;
+    facebook?: string;
+    github?: string;
+    linkedin?: string;
   };
 
   address?: {
