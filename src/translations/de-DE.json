@@ -2,6 +2,14 @@
   "APP_NAME": "Ihre TItle",
   "ABOUT": "Über",
   "Version": "Version",
-  "PORTFOLIO": "PORTFOLIO",
-  "ADDRESS": "Adresse"
+  "PORTFOLIO": "Portfolio",
+  "ADDRESS": "Adresse",
+  "CONTACT": {
+    "SELF": "Kontakt",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "PHONE_NUMBER": "Telefonnummer",
+    "MESSAGE": "Nachricht",
+    "SEND": "Senden"
+  }
 }
