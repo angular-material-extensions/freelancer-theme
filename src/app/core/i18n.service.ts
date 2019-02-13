@@ -6,6 +6,7 @@ import { Logger } from './logger.service';
 import { LocalStorage } from 'ngx-webstorage';
 import enUS from '../../translations/en-US.json';
 import frFR from '../../translations/fr-FR.json';
+import deDE from '../../translations/de-DE.json';
 
 const log = new Logger('I18nService');
 const languageKey = 'language';
@@ -32,6 +33,7 @@ export class I18nService {
     // Embed languages to avoid extra HTTP requests
     translateService.setTranslation('en-US', enUS);
     translateService.setTranslation('fr-FR', frFR);
+    translateService.setTranslation('de-DE', deDE);
   }
 
   /**

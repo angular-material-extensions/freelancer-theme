@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
-import { Title } from '@angular/platform-browser';
+import { DomSanitizer, Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { merge } from 'rxjs';
 import { filter, map, mergeMap } from 'rxjs/operators';
@@ -8,6 +8,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 import { environment } from '@env/environment';
 import { I18nService, Logger } from '@app/core';
+import { MatIconRegistry } from '@angular/material';
 
 const log = new Logger('App');
 
@@ -25,8 +26,17 @@ export class AppComponent implements OnInit {
     // do not remove the analytics injection, even if the call in ngOnInit() is removed
     // this injection initializes page tracking through the router
     private angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics,
-    private i18nService: I18nService
-  ) {}
+    private i18nService: I18nService,
+    private _iconRegistry: MatIconRegistry,
+    private _sanitizer: DomSanitizer
+  ) {
+    console.log('on construct app component');
+    _iconRegistry
+      .addSvgIcon('facebook', _sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/facebook.svg'))
+      .addSvgIcon('twitter', _sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/twitter.svg'))
+      .addSvgIcon('linkedin', _sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/linkedin.svg'))
+      .addSvgIcon('github', _sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/github-circle.svg'));
+  }
 
   ngOnInit() {
     // Setup logger

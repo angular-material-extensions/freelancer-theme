@@ -1,4 +1,4 @@
-import { TestBed, inject } from '@angular/core/testing';
+import { inject, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpClient, HttpInterceptor } from '@angular/common/http';
 
@@ -6,7 +6,6 @@ import { HttpService } from './http.service';
 import { HttpCacheService } from './http-cache.service';
 import { ErrorHandlerInterceptor } from './error-handler.interceptor';
 import { CacheInterceptor } from './cache.interceptor';
-import { ApiPrefixInterceptor } from './api-prefix.interceptor';
 
 describe('HttpService', () => {
   let httpCacheService: HttpCacheService;
@@ -19,7 +18,6 @@ describe('HttpService', () => {
       providers: [
         ErrorHandlerInterceptor,
         CacheInterceptor,
-        ApiPrefixInterceptor,
         HttpCacheService,
         {
           provide: HttpClient,
@@ -58,7 +56,6 @@ describe('HttpService', () => {
     // Assert
     request.subscribe(() => {
       expect(http.request).toHaveBeenCalled();
-      expect(interceptors.some(i => i instanceof ApiPrefixInterceptor)).toBeTruthy();
       expect(interceptors.some(i => i instanceof ErrorHandlerInterceptor)).toBeTruthy();
       expect(interceptors.some(i => i instanceof CacheInterceptor)).toBeFalsy();
     });
@@ -79,7 +76,6 @@ describe('HttpService', () => {
 
     // Assert
     request.subscribe(() => {
-      expect(interceptors.some(i => i instanceof ApiPrefixInterceptor)).toBeTruthy();
       expect(interceptors.some(i => i instanceof ErrorHandlerInterceptor)).toBeTruthy();
       expect(interceptors.some(i => i instanceof CacheInterceptor)).toBeTruthy();
     });
@@ -100,7 +96,6 @@ describe('HttpService', () => {
 
     // Assert
     request.subscribe(() => {
-      expect(interceptors.some(i => i instanceof ApiPrefixInterceptor)).toBeTruthy();
       expect(interceptors.some(i => i instanceof ErrorHandlerInterceptor)).toBeFalsy();
       expect(interceptors.some(i => i instanceof CacheInterceptor)).toBeFalsy();
     });
@@ -116,15 +111,6 @@ describe('HttpService', () => {
       return realRequest.apply(this, arguments);
     });
 
-    // Act
-    const request = http.disableApiPrefix().get('/toto');
-
-    // Assert
-    request.subscribe(() => {
-      expect(interceptors.some(i => i instanceof ApiPrefixInterceptor)).toBeFalsy();
-      expect(interceptors.some(i => i instanceof ErrorHandlerInterceptor)).toBeTruthy();
-      expect(interceptors.some(i => i instanceof CacheInterceptor)).toBeFalsy();
-    });
     httpMock.expectOne({}).flush({});
   });
 });

@@ -1,10 +1,9 @@
 import { Inject, Injectable, InjectionToken, Injector, Optional } from '@angular/core';
-import { HttpClient, HttpEvent, HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';
+import { HttpClient, HttpEvent, HttpHandler, HttpInterceptor, HttpRequest } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { ErrorHandlerInterceptor } from './error-handler.interceptor';
 import { CacheInterceptor } from './cache.interceptor';
-import { ApiPrefixInterceptor } from './api-prefix.interceptor';
 
 // HttpClient is declared in a re-exported module, so we have to extend the original module to make it work properly
 // (see https://github.com/Microsoft/TypeScript/issues/13897)
@@ -24,12 +23,6 @@ declare module '@angular/common/http/src/client' {
      * @return The new instance.
      */
     skipErrorHandler(): HttpClient;
-
-    /**
-     * Do not use API prefix for this request.
-     * @return The new instance.
-     */
-    disableApiPrefix(): HttpClient;
   }
 }
 
@@ -66,7 +59,7 @@ export class HttpService extends HttpClient {
 
     if (!this.interceptors) {
       // Configure default interceptors that can be disabled here
-      this.interceptors = [this.injector.get(ApiPrefixInterceptor), this.injector.get(ErrorHandlerInterceptor)];
+      this.interceptors = [this.injector.get(ErrorHandlerInterceptor)];
     }
   }
 
@@ -77,10 +70,6 @@ export class HttpService extends HttpClient {
 
   skipErrorHandler(): HttpClient {
     return this.removeInterceptor(ErrorHandlerInterceptor);
-  }
-
-  disableApiPrefix(): HttpClient {
-    return this.removeInterceptor(ApiPrefixInterceptor);
   }
 
   // Override the original method to wire interceptors when triggering the request.
