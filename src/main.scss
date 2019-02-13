@@ -23,6 +23,10 @@
 // Theme customization
 @import "theme/theme";
 
+$facebook: #385899;
+$twitter: #1da1f2;
+$github: #b21a32;
+
 .container {
   text-align: center;
   padding: 1em;
@@ -115,6 +119,12 @@
   padding-bottom: 5rem;
   background-color: #2c3e50;
   color: #fff;
+
+  .mat-fab {
+    margin-right: 0.25rem;
+    margin-left: 0.25rem;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .copyright {
