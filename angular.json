@@ -29,7 +29,7 @@
               "src/manifest.json",
               "src/assets"
             ],
-            "styles": ["src/main.scss"],
+            "styles": ["src/main.scss", "node_modules/material-design-icons/iconfont/material-icons.css"],
             "scripts": []
           },
           "configurations": {
@@ -96,7 +96,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
-            "styles": ["src/main.scss"],
+            "styles": ["src/main.scss", "node_modules/material-design-icons/iconfont/material-icons.css"],
             "assets": [
               "src/favicon.ico",
               "src/apple-touch-icon.png",
