@@ -48,13 +48,12 @@ View all the directives and components in action at [https://angular-material-ex
 
 # Features
 
-| -----------------------------------------------|:-------------  
-| :heavy_check_mark: | SPA  
-| :heavy_check_mark: | Easy to setup  
-| :heavy_check_mark: | Fully Customizable via `config.ts`  
-| :heavy_check_mark: | Built with Angular V7  
-| :heavy_check_mark: | Material Design  
-| :heavy_check_mark: | SEO friendly with angular universal
+:heavy_check_mark: | SPA  
+ :heavy_check_mark: | Easy to setup  
+ :heavy_check_mark: | Fully Customizable via `config.ts`  
+ :heavy_check_mark: | Built with Angular V7  
+ :heavy_check_mark: | Material Design  
+ :heavy_check_mark: | SEO friendly with angular universal
 
 <a name="getting-started"/>
 
@@ -66,7 +65,7 @@ View all the directives and components in action at [https://angular-material-ex
 git clone https://github.com/angular-material-extensions/freelancer-theme.git
 ```
 
-2. Go to project folder and install dependencies:
+2. Go to the project folder and install the dependencies:
 
 ```sh
 cd freelancer-theme && npm install
@@ -151,7 +150,7 @@ export const DEFAULT_CONFIG: Config = {
 
 2. Open `package.json` and replace `freelance-theme` with either your favourite or repository name
 
-3. Change or remove the Track ID of Google Analytics in the `index.html` file
+3. Change or remove the Track ID of Google Analytics in the `index.html` file and adjust the meta tags for SEO purposes
 
 4. Build or prerender the SPA
    a. Normal production build via `npm run build:prod`
