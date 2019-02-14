@@ -17,6 +17,6 @@
   </div>
 </mat-dialog-content>
 
-<mat-dialog-actions fxLayoutAlign="center center">
-  <button color="accent" mat-raised-button>Visit</button>
+<mat-dialog-actions *ngIf="data.url" fxLayoutAlign="center center">
+  <a color="accent" mat-raised-button [href]="data.url">Visit</a>
 </mat-dialog-actions>

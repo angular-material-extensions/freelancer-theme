@@ -1,9 +1,8 @@
 /**
  * @author Anthony Nahas
  * @since 01.2019
- * @version 1.0
+ * @version 1.1
  */
-
 export interface Config {
   title: string;
   description: string;
@@ -37,5 +36,12 @@ export interface Config {
 export interface Project {
   name: string;
   description: string;
+  imageURL?: string;
+  url?: string;
+  client?: Client;
+}
+
+export interface Client {
+  name: string;
   imageURL?: string;
 }
