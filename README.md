@@ -1,10 +1,10 @@
 <p align="center">
   <img alt="angular-material-extensions's logo"
    height="256px" width="256px" style="text-align: center;" 
-   src="assets/angular-material-extensions-logo.svg">
+   src="https://cdn.jsdelivr.net/gh/angular-material-extensions/freelancer-theme/assets/angular-material-extensions-logo.svg">
 </p>
 
-# freelancer-theme
+# @angular-material-extensions/freelancer-theme - Open Source Angular Material Theme as SPA for freelancers based on [Start Bootstrap Theme](https://github.com/BlackrockDigital/startbootstrap-freelancer)
 
 [![npm demo](https://img.shields.io/badge/demo-online-ed1c46.svg)](https://angular-material-extensions.github.io/freelancer-theme)
 [![Join the chat at https://gitter.im/angular-material-extensions/Lobby](https://badges.gitter.im/angular-material-extensions/Lobby.svg)](https://gitter.im/angular-material-extensions/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -18,7 +18,7 @@
 
 <p align="center">
   <img alt="@angular-material-extensions/freelancer-theme screenshot" style="text-align: center;"
-   src="assets/MDPI_SCREEN.png">
+   src="https://cdn.jsdelivr.net/gh/angular-material-extensions/freelancer-theme/assets/MDPI_SCREEN.png">
 </p>
 
 ## Built by and for developers :heart:
@@ -32,10 +32,10 @@ by starring :star: and sharing it :loudspeaker:
 ## Table of Contents
 
 - [Demo](#demo)
+- [Features](#features)
 - [Getting started](#getting-started)
+- [Usage](#usage)
 - [Documentation](#documentation)
-- [Run Demo App Locally](#run-demo-app-locally)
-- [Development](#development)
 - [Other Angular Libraries](#other-angular-libraries)
 - [Support](#support)
 - [License](#license)
@@ -43,6 +43,18 @@ by starring :star: and sharing it :loudspeaker:
 ## [Demo](https://angular-material-extensions.github.io/freelancer-theme)
 
 View all the directives and components in action at [https://angular-material-extensions.github.io/freelancer-theme](https://angular-material-extensions.github.io/freelancer-theme)
+
+<a name="features"/>
+
+# Features
+
+| -----------------------------------------------|:-------------  
+| :heavy_check_mark: | SPA  
+| :heavy_check_mark: | Easy to setup  
+| :heavy_check_mark: | Fully Customizable via `config.ts`  
+| :heavy_check_mark: | Built with Angular V7  
+| :heavy_check_mark: | Material Design  
+| :heavy_check_mark: | SEO friendly with angular universal
 
 <a name="getting-started"/>
 
@@ -60,13 +72,15 @@ git clone https://github.com/angular-material-extensions/freelancer-theme.git
 cd freelancer-theme && npm install
 ```
 
-3. Adapt the configuration file to suit your profile
+3. Adapt the configuration file `config.ts` to suit your profile (see the below and usage section)
 
 4. Launch development server, and open `localhost:4200` in your browser:
 
 ```sh
 npm start
 ```
+
+<a name="project-structure"/>
 
 # Project structure
 
@@ -86,6 +100,7 @@ src/                         project source code
 |- environments/             values for various build environments
 |- theme/                    app global scss variables and theme
 |- translations/             translations files
+|- config.ts/                CONFIGURE THE SPA ON YOUR OWN HERE
 |- index.html                html entry point
 |- main.scss                 global style entry point
 |- main.ts                   app entry point
@@ -94,6 +109,57 @@ src/                         project source code
 reports/                     test and coverage reports
 proxy.conf.js                backend proxy configuration
 ```
+
+<a name="usage"/>
+
+# Usage
+
+1. Open the `config.ts` file and adjust the properties to suit your profile
+
+```ts
+export const DEFAULT_CONFIG: Config = {
+  title: 'Angular Material Freenlancer Theme',
+  description: 'Web Developer - Graphic Artist - User Experience Designer',
+  url: 'https://github.com/angular-material-extensions/freelancer-theme',
+  domain: 'github.com',
+  projects: projects,
+  about: {
+    section1:
+      'This Freelancer Theme is a free material theme created by angular material extensions based on Start' +
+      ' Bootstrap.The download includes the complete source files including HTML, CSS, and JavaScript as well as ' +
+      'optional LESS stylesheets for easy customization.',
+    section2:
+      'Whether you are a student looking to showcase your work, a' +
+      ' professional looking to attract clients, or a graphic artist looking to share your projects, this template ' +
+      'is the perfect starting point!'
+  },
+  social: {
+    facebook: 'https://www.facebook.com/',
+    twitter: 'https://twitter.com/ngAnthonyy',
+    github: 'https://github.com/AnthonyNahas',
+    linkedin: 'https://www.linkedin.com/in/anthony-nahas-926245119/'
+  },
+  address: {
+    country: 'Germany',
+    state: 'Niedersachen',
+    city: 'Göttingen',
+    street: 'meine Strasse',
+    zip: '1234'
+  }
+};
+```
+
+2. Open `package.json` and replace `freelance-theme` with either your favourite or repository name
+
+3. Change or remove the Track ID of Google Analytics in the `index.html` file
+
+4. Build or prerender the SPA
+   a. Normal production build via `npm run build:prod`
+   b. Prerendered production build via `npm run build:prerender`
+
+5. Deploy the `dist` directory to your favorite hosting service like github pages, firebase hosting, heroku...
+
+per default this project uses github pages to host the app. This can be achieved via `npm run deploy:demo`
 
 # Main tasks
 
