@@ -9,10 +9,10 @@
       "urls": [
         "/freelancer-theme/favicon.ico",
         "/freelancer-theme/index.html",
-        "/freelancer-theme/main.ab3f7406bf848eec2706.js",
+        "/freelancer-theme/main.46655545c94526def326.js",
         "/freelancer-theme/polyfills.493406d110d9255e1f25.js",
         "/freelancer-theme/runtime.a777f4e5ca57b6a2ca15.js",
-        "/freelancer-theme/styles.5fe79a609a5442e10bae.css"
+        "/freelancer-theme/styles.4877bc78057b24caae79.css"
       ],
       "patterns": []
     },
@@ -21,6 +21,10 @@
       "installMode": "lazy",
       "updateMode": "prefetch",
       "urls": [
+        "/freelancer-theme/assets/icons/facebook.svg",
+        "/freelancer-theme/assets/icons/github-circle.svg",
+        "/freelancer-theme/assets/icons/linkedin.svg",
+        "/freelancer-theme/assets/icons/twitter.svg",
         "/freelancer-theme/assets/images/icons/icon-128x128.png",
         "/freelancer-theme/assets/images/icons/icon-144x144.png",
         "/freelancer-theme/assets/images/icons/icon-152x152.png",
@@ -37,13 +41,18 @@
         "/freelancer-theme/assets/img/portfolio/submarine.png",
         "/freelancer-theme/assets/img/profile.png",
         "/freelancer-theme/assets/manifest.json",
-        "/freelancer-theme/assets/ngx-rocket-logo.png"
+        "/freelancer-theme/assets/ngx-rocket-logo.png",
+        "/freelancer-theme/assets/pdf/graduate_software_engineer.pdf"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
+    "/freelancer-theme/assets/icons/facebook.svg": "7adff801f32e332d456f02cf672e3843defaa46b",
+    "/freelancer-theme/assets/icons/github-circle.svg": "8cbbe0b21db431d1a713a9dae71632d617556e37",
+    "/freelancer-theme/assets/icons/linkedin.svg": "b36f1676e29874742bc33724ecfb647a6b233780",
+    "/freelancer-theme/assets/icons/twitter.svg": "ef774fee0b1fb18f9ea6743c2984ff337b23b756",
     "/freelancer-theme/assets/images/icons/icon-128x128.png": "b9cbcee329c974ee1a41d501ad62d8841e2df45a",
     "/freelancer-theme/assets/images/icons/icon-144x144.png": "cee6f46dda413c5e3f5741f1564e9f4de004873b",
     "/freelancer-theme/assets/images/icons/icon-152x152.png": "4ea6c87c0c9f7370721886174a615019bfd60d82",
@@ -61,12 +70,13 @@
     "/freelancer-theme/assets/img/profile.png": "5448d1040cec523266fa2ff7b21b82f0947ab8b9",
     "/freelancer-theme/assets/manifest.json": "49959d04f2ceee5138b4a291585aefa7dc62cc99",
     "/freelancer-theme/assets/ngx-rocket-logo.png": "0ac53fd27406fe5a36e68285315fb0012e54058e",
+    "/freelancer-theme/assets/pdf/graduate_software_engineer.pdf": "4d4bfe81acee687ecffccd0d5d42f4239c2e1db8",
     "/freelancer-theme/favicon.ico": "b65083d46bbf63692d5d2cdd69622e6d7ecae317",
-    "/freelancer-theme/index.html": "cec926dc66d7b071248da8cb9ce83194278ee554",
-    "/freelancer-theme/main.ab3f7406bf848eec2706.js": "b1a1b47c73f6be65bdd3bcd459d3487f21dd0bd9",
+    "/freelancer-theme/index.html": "e0802db307bf71c77e5fcff632830b7e7da00e8c",
+    "/freelancer-theme/main.46655545c94526def326.js": "9508793bb18d025c0611ad219b8e12bc6d055377",
     "/freelancer-theme/polyfills.493406d110d9255e1f25.js": "6946e10a03311677a01490b8e91741668e64e17e",
     "/freelancer-theme/runtime.a777f4e5ca57b6a2ca15.js": "d6b24b0afea5ab5bed3a4ad2010e324c7a1196ef",
-    "/freelancer-theme/styles.5fe79a609a5442e10bae.css": "6c726b747cbacd2528163ebd3fa8981cbff52272"
+    "/freelancer-theme/styles.4877bc78057b24caae79.css": "63e1f3c46ad8afb44046cc544218ee4a47fcad69"
   },
   "navigationUrls": [
     {
