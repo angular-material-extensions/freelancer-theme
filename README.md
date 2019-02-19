@@ -14,7 +14,6 @@
 [![devDependency Status](https://david-dm.org/angular-material-extensions/freelancer-theme/dev-status.svg?branch=master)](https://david-dm.org/angular-material-extensions/freelancer-theme#info=devDependencies)
 [![Greenkeeper Badge](https://badges.greenkeeper.io/angular-material-extensions/freelancer-theme.svg)](https://greenkeeper.io/)
 [![license](https://img.shields.io/github/license/angular-material-extensions/freelancer-theme.svg?style=flat-square)](https://github.com/angular-material-extensions/freelancer-theme/blob/master/LICENSE)
-[![Greenkeeper badge](https://badges.greenkeeper.io/angular-material-extensions/freelancer-theme.svg)](https://greenkeeper.io/)
 
 <p align="center">
   <img alt="@angular-material-extensions/freelancer-theme screenshot" style="text-align: center;"
