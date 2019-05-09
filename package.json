@@ -81,7 +81,7 @@
     "@types/lodash": "^4.14.123",
     "@types/node": "^10.14.0",
     "angular-cli-ghpages": "^0.5.3",
-    "codecov": "^3.2.0",
+    "codecov": "^3.4.0",
     "codelyzer": "^4.4.4",
     "express": "^4.16.4",
     "hads": "^1.7.2",
