@@ -2,7 +2,7 @@ version: 2
 
 job_defaults: &job_defaults
   docker:
-    - image: circleci/node:latest
+    - image: circleci/node:10-browsers
       environment:
         CHROME_BIN: '/usr/bin/google-chrome'
   working_directory: ~/project/repo
