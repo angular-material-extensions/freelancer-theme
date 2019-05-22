@@ -105,25 +105,26 @@ workflows:
       - lint:
           requires:
             - install
-      - test-app:
-          requires:
-            - install
-      - codecov:
-          requires:
-            - test-app
-      - build-prerender-app:
-          requires:
-            - lint
+      #      - test-app:
+      #          requires:
+      #            - install
+      #      - codecov:
+      #          requires:
       #            - test-app
       - release:
           requires:
-            - build-prerender-app
+            - lint
           filters:
             branches:
               only: master
-      - deploy-app:
+      - build-prerender-app:
           requires:
             - release
+      #            - lint
+      #            - test-app
+      - deploy-app:
+          requires:
+            - build-prerender-app
           filters:
             branches:
               only: master
