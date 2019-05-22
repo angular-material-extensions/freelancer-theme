@@ -9,7 +9,8 @@ export const environment = {
   production: false,
   version: env.npm_package_version + '-dev',
   defaultLanguage: 'en-US',
-  supportedLanguages: ['en-US', 'de-DE', 'fr-FR']
+  supportedLanguages: ['en-US', 'de-DE', 'fr-FR'],
+  serverUrl: ''
 };
 
 /*

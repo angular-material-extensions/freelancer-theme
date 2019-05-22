@@ -5,5 +5,6 @@ export const environment = {
   production: true,
   version: env.npm_package_version,
   defaultLanguage: 'en-US',
-  supportedLanguages: ['en-US', 'de-DE', 'fr-FR']
+  supportedLanguages: ['en-US', 'de-DE', 'fr-FR'],
+  serverUrl: ''
 };
