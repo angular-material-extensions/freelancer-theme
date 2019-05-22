@@ -83,7 +83,7 @@ jobs:
           key: *dist_key
       - run:
           name: release
-          command: npm run deploy:demo
+          command: npm run semantic-release || true
 
   deploy-app:
     <<: *job_defaults
@@ -95,7 +95,7 @@ jobs:
           key: *dist_key
       - run:
           name: deploy-app
-          command: npm run semantic-release || true
+          command: npm run deploy:demo
 
 workflows:
   version: 2
