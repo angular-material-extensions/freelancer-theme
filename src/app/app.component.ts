@@ -32,8 +32,10 @@ export class AppComponent implements OnInit {
     private _iconRegistry: MatIconRegistry,
     private _sanitizer: DomSanitizer
   ) {
-    // domain and port for SSR in this example is static. Use i.e. environment files to use appropriate dev/prod domain:port
-    // const domain = (isPlatformServer(platformId)) ? 'http://localhost:4000' : 'https://angular-material-extensions.github.io/freelancer-theme';
+    // domain and port for SSR in this example is static. Use i.e. environment
+    // files to use appropriate dev/prod domain:port
+    // const domain = (isPlatformServer(platformId))
+    // ? 'http://localhost:4000' : 'https://angular-material-extensions.github.io/freelancer-theme';
     const domain = isPlatformServer(platformId) ? 'http://localhost:4000' : '';
     console.log('on construct app component');
     _iconRegistry
