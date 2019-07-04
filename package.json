@@ -54,7 +54,7 @@
     "@angular/router": "^7.2.8",
     "@angular/service-worker": "^7.2.8",
     "@nguniversal/express-engine": "^7.1.1",
-    "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
+    "@nguniversal/module-map-ngfactory-loader": "^8.1.1",
     "@ngx-translate/core": "^11.0.1",
     "angulartics2": "^7.4.1",
     "core-js": "^2.6.5",
