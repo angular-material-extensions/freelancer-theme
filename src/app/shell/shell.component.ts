@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./shell.component.scss']
 })
 export class ShellComponent implements OnInit {
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  @ViewChild('sidenav', { static: true }) sidenav: MatSidenav;
 
   constructor(private media: MediaObserver) {}
 
