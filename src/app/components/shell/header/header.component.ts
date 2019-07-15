@@ -1,5 +1,5 @@
 import { Component, Inject, Input } from '@angular/core';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 
 import { I18nService } from '../../../core';
 import { Config, ConfigToken } from '../../../../config';

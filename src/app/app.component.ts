@@ -8,7 +8,7 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2/ga';
 
 import { environment } from '@env/environment';
 import { I18nService, Logger } from '@app/core';
-import { MatIconRegistry } from '@angular/material';
+import { MatIconRegistry } from '@angular/material/icon';
 import { isPlatformServer } from '@angular/common';
 
 const log = new Logger('App');

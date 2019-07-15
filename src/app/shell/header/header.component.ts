@@ -1,6 +1,6 @@
 import { Title } from '@angular/platform-browser';
 import { Component, Input, OnInit } from '@angular/core';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 
 import { I18nService } from '@app/core';
 

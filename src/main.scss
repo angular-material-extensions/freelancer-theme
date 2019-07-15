@@ -82,13 +82,13 @@ $github: #b21a32;
   }
 }
 
-@media only (min-width: 599px) and (max-width: 1279px) {
+@media (min-width: 599px) and (max-width: 1279px) {
   .img-project {
     max-height: 300px;
   }
 }
 
-@media only (min-width: 1279px) {
+@media (min-width: 1279px) {
   .img-project {
     max-height: 400px;
   }

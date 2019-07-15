@@ -9,7 +9,6 @@ import { SharedModule } from '../../shared';
 import { MaterialModule } from '../../material.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { QuoteService } from './quote.service';
 import { AboutComponent } from '../about/about.component';
 
 @NgModule({
@@ -24,6 +23,6 @@ import { AboutComponent } from '../about/about.component';
     HomeRoutingModule
   ],
   declarations: [HomeComponent, AboutComponent],
-  providers: [QuoteService]
+  providers: []
 })
 export class HomeModule {}

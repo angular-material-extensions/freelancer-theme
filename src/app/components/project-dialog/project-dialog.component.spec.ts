@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProjectDialogComponent } from './project-dialog.component';
 import { MaterialModule } from '@app/material.module';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 describe('ProjectDialogComponent', () => {
   let component: ProjectDialogComponent;
