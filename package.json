@@ -116,7 +116,7 @@
     "tslint": "~5.12.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "~3.2.4",
-    "webpack-cli": "^3.3.5"
+    "webpack-cli": "3.3.8"
   },
   "jest": {
     "preset": "jest-preset-angular",
