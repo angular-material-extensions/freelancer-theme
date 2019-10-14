@@ -57,7 +57,7 @@
     "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
     "@ngx-translate/core": "^11.0.1",
     "angulartics2": "^7.4.1",
-    "core-js": "^2.6.9",
+    "core-js": "^3.3.2",
     "hammerjs": "^2.0.8",
     "lodash": "^4.17.14",
     "material-design-icons": "^3.0.1",
