@@ -106,7 +106,7 @@
     "protractor": "~5.4.0",
     "puppeteer": "^1.18.1",
     "reflect-metadata": "^0.1.13",
-    "semantic-release": "^15.13.18",
+    "semantic-release": "^15.13.27",
     "stylelint": "~9.10.1",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended-scss": "~3.2.0",
