@@ -83,7 +83,7 @@
     "@types/jasmine": "^3.3.13",
     "@types/jasminewd2": "^2.0.2",
     "@types/lodash": "^4.14.136",
-    "@types/node": "^10.14.12",
+    "@types/node": "^12.12.2",
     "angular-cli-ghpages": "^0.5.3",
     "codecov": "^3.2.0",
     "codelyzer": "^4.4.4",
