@@ -109,7 +109,7 @@
     "semantic-release": "^15.13.18",
     "stylelint": "~9.10.1",
     "stylelint-config-prettier": "^4.0.0",
-    "stylelint-config-recommended-scss": "~3.2.0",
+    "stylelint-config-recommended-scss": "~4.1.0",
     "stylelint-config-standard": "~18.2.0",
     "stylelint-scss": "^3.9.1",
     "ts-node": "^8.3.0",
