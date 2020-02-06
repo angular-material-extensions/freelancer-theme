@@ -53,7 +53,7 @@
     "@angular/platform-server": "^7.2.8",
     "@angular/router": "^7.2.8",
     "@angular/service-worker": "^7.2.8",
-    "@nguniversal/express-engine": "^7.1.1",
+    "@nguniversal/express-engine": "^9.0.0",
     "@nguniversal/module-map-ngfactory-loader": "^7.1.1",
     "@ngx-translate/core": "^11.0.1",
     "angulartics2": "^7.4.1",
