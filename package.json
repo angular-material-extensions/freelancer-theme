@@ -73,7 +73,7 @@
     "@angular/cli": "^7.3.5",
     "@angular/compiler-cli": "^7.2.8",
     "@angular/language-service": "^7.2.8",
-    "@biesbjerg/ngx-translate-extract": "^2.3.4",
+    "@biesbjerg/ngx-translate-extract": "^6.0.3",
     "@ngx-rocket/scripts": "^3.0.4",
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/commit-analyzer": "^6.2.0",
